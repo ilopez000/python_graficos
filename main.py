@@ -65,3 +65,15 @@ def grafico_lineas():
     plt.show()
 
 #grafico_lineas()
+
+def grafico_circular():
+    etiquetas = ['Python', 'Java', 'C++', 'JavaScript', 'C#']
+    porcentajes = [40, 20, 15, 15, 10]
+
+    # Crear gráfico circular
+    plt.figure(figsize=(8, 8))
+    plt.pie(porcentajes, labels=etiquetas, autopct='%1.1f%%', startangle=140)
+    plt.title('Popularidad de Lenguajes de Programación en 2023')
+    plt.show()
+
+#grafico_circular()
