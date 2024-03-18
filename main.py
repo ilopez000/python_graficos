@@ -76,9 +76,6 @@ def grafico_circular():
 
 #Ejemplo de serie gráfica
 def evolucion_numancia():
-    import matplotlib.pyplot as plt
-    import numpy as np
-
     # Supongamos que este es el vector con las posiciones del Numancia jornada a jornada
     posiciones = np.array([18, 17, 16, 16, 15, 14, 14, 13, 12, 11, 10, 11, 12, 13, 14, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 16, 15, 14, 13])
     jornadas = np.arange(1, len(posiciones) + 1)
