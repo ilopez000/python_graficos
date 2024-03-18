@@ -73,3 +73,25 @@ def grafico_circular():
     plt.show()
 
 #grafico_circular()
+
+#Ejemplo de serie gráfica
+def evolucion_numancia():
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    # Supongamos que este es el vector con las posiciones del Numancia jornada a jornada
+    posiciones = np.array([18, 17, 16, 16, 15, 14, 14, 13, 12, 11, 10, 11, 12, 13, 14, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 16, 15, 14, 13])
+    jornadas = np.arange(1, len(posiciones) + 1)
+
+    # Crear el gráfico de líneas
+    plt.figure(figsize=(12, 6))
+    plt.plot(jornadas, posiciones, marker='o', linestyle='-', color='blue')
+    plt.title('Evolución de la Posición del Numancia en la Liga')
+    plt.xlabel('Jornada')
+    plt.ylabel('Posición')
+    plt.gca().invert_yaxis()  # Invertir el eje Y para que la posición 1 esté arriba
+    plt.grid(True)
+    plt.savefig("evolucion_numancia.png")  # Guardar el gráfico en formato PNG
+    plt.show()
+
+evolucion_numancia()
