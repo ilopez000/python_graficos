@@ -22,10 +22,6 @@ Y = 2 * X
 
 #Gráfico de barras
 def grafico_barras():
-    # Generar datos de ejemplo
-    import matplotlib.pyplot as plt
-    import numpy as np
-
     # Datos de ejemplo
     meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre',
              'Noviembre', 'Diciembre']
